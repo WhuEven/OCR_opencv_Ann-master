@@ -15,14 +15,13 @@ cv::Mat getFeature(Mat raw_img)
 	//寻找最小外接矩，得到感兴趣区域
 	Rect _rect = getMinRect2(raw_img);
 	Mat roi_img = raw_img(_rect);
+	cv::imshow("image",roi_img);
+	cv::waitKey();
 
 
 	//将图片缩放至指定大小
 	Mat lowData;
 	resize(roi_img, lowData, Size(IMAGE_SIZE, IMAGE_SIZE));
-
-	cv::imshow("预测前处理后图",lowData);
-	cv::waitKey();
 
 	//直方图特征
 	Mat hist = getHistogram(lowData);

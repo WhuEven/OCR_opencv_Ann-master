@@ -1,4 +1,5 @@
 #include"train.h"
+#include "getFeature.h"
 #include<opencv.hpp>
 
 using namespace std;
@@ -21,8 +22,8 @@ void num_to_char(int num)
 
 int main()
 {
-
-	//getFeature("E:\\OCR\\Train\\B\\10-5.jpg");	//获取图像特征向量
+	//Mat img = cv::imread("E:\\OCR\\1.png");
+	//getFeature(img);	//获取图像特征向量
 
 		
 	/*Mat train_data_mat;		//图像特征向量集
@@ -59,7 +60,7 @@ int main()
 
 	
 	//一串字符测试
-	Mat img = cv::imread("E:\\OCR\\TEST1.png", 0);
+	Mat img = cv::imread("E:\\OCR\\a_2.png",0);
 	//cv::imshow("image",img);
 	//cv::waitKey();
 	//cv::destroyAllWindows();
