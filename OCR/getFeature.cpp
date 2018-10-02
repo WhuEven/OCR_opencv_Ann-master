@@ -15,8 +15,8 @@ cv::Mat getFeature(Mat raw_img)
 	//寻找最小外接矩，得到感兴趣区域
 	Rect _rect = getMinRect2(raw_img);
 	Mat roi_img = raw_img(_rect);
-	cv::imshow("image",roi_img);
-	cv::waitKey();
+	//cv::imshow("image",roi_img);
+	//cv::waitKey();
 
 
 	//将图片缩放至指定大小

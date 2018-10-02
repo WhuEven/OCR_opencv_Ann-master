@@ -31,7 +31,7 @@ int main()
 	train_data_mat.convertTo(train_data_mat, CV_32F);
 	GetData("E:\\OCR\\Train", train_data_mat, labels_mat);*/
 
-
+//	
 	//train("E:\\OCR\\Train1"); //ÑµÁ·
 
 
@@ -55,19 +55,19 @@ int main()
 	*/
 
 
-	//float rate;
-	//rate=test("E:\\OCR\\Train");
+	float rate;
+	rate=test("E:\\OCR\\Train1");
 
 	
 	//Ò»´®×Ö·û²âÊÔ
-	Mat img = cv::imread("E:\\OCR\\a_2.png",0);
+	//Mat img = cv::imread("E:\\OCR\\A.png",0);
 	//cv::imshow("image",img);
 	//cv::waitKey();
 	//cv::destroyAllWindows();
-	img_clip(img);
+	//img_clip(img);
 
 	
-	system("pause");
+	//system("pause");
 	
 
 	return 0;
